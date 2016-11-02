@@ -27,7 +27,7 @@
 			<td bgcolor="white"><a href=/tsPHP/index.php?more=23>11-А</a></td>
 		</tr><tr>			
 		</tr><tr>
-			<td bgcolor="white" colspan="2" align="center"><div style="font-size: 9pt;"><a href="/tsPHP/index.php?logout">Выйти</a></div></td>
+			<td bgcolor="white" colspan="2" align="center"><div style="font-size: 9pt;"><a href="UsingHtmlForms.php">Выйти</a></div></td>
 		</tr>
 		</table>
 

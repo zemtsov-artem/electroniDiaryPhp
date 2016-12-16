@@ -1,6 +1,8 @@
 <?php
-    //$dbh = new PDO('mysql:host=localhost:3306;dbname=electric_diary', root, Qwerty123);
-    #it is a way to fix os.x bug then we try to connect to localhost
+
+    //Стартуем сессии
+    session_start();
+    header('Content-Type: text/html; charset=utf-8');
     $link = mysql_connect('127.0.0.1','root','Qwerty123');
     if (!$link) {
       die('Ошибка соединения: ' . mysql_error());
@@ -10,15 +12,6 @@
     if($ath){
       $passes = mysql_fetch_array ($ath);
             $author = mysql_fetch_array($ath);
-      foreach ($author as $value) {
-        echo $value;
-        echo " ";
-
-      }
-      // Так как запрос возвращает несколько строк, применяем цикл
-      while($author = mysql_fetch_array($ath)){
-        //echo $author['login'] ;
-      }
     }
 ?>
 
@@ -31,7 +24,7 @@
   <h1>Электронный дневник</h1>
   <!-- Комментарий -->
   <p>Добро пожаловать.</p>
-  <form action="studPage.php"  method="post" enctype="multipart/form-data">
+  <form action="loginPairCheck.php"  method="post" enctype="multipart/form-data">
 	Ваш логин  : <input type="text" name="login" /><br />
 	Ваш пароль: <input type="password" name="password" /><br />
 	<input type="submit" value="Отправить форму" />

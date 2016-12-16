@@ -18,7 +18,7 @@
 	
 		<table width="100%" cellpadding="7" cellspacing="1" border="0" style="font-size: 10pt; font-family: tahoma;">
 		<tr>
-			<td bgcolor="white" colspan="2" align="center"><b>Информация об ученике</b></td>
+			<td bgcolor="white" colspan="2" align="center"><b>Информация об ученике</b> </td>
 		</tr><tr>
 			<td bgcolor="white">Имя</td>
 			<td bgcolor="white">Егорка Епифанов</td>
@@ -27,7 +27,7 @@
 			<td bgcolor="white"><a href=/tsPHP/index.php?more=23>11-А</a></td>
 		</tr><tr>			
 		</tr><tr>
-			<td bgcolor="white" colspan="2" align="center"><div style="font-size: 9pt;"><a href="UsingHtmlForms.php">Выйти</a></div></td>
+			<td bgcolor="white" colspan="2" align="center"><div style="font-size: 9pt;"><a href="exit.php">Выйти</a></div></td>
 		</tr>
 		</table>
 
@@ -45,7 +45,7 @@
 				<td width="20%" bgcolor="white">Преподаватель</td>
 			</tr>
 			<tr>
-				<td width="8%" bgcolor="white">Математика</td>
+				<td width="8%" bgcolor="white">Математикаыы</td>
 				<td width="*%" bgcolor="white" align="center">None</td>
 				<td width="20%" bgcolor="white">Медведева <br> Людмила Николаевна </td>
 			</tr><tr>

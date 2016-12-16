@@ -8,17 +8,18 @@
     mysql_select_db('elec_diar');
     $ath = mysql_query("select login from login_base;");
     if($ath){
-      $passes = mysql_fetch_row($ath);
-      echo "<br>имя = ".$passes[1]."<br>";
-      echo "<br>имя = ".$passes[2]."<br>";
+      $passes = mysql_fetch_array ($ath);
+            $author = mysql_fetch_array($ath);
+      foreach ($author as $value) {
+        echo $value;
+        echo " ";
+
+      }
+      // Так как запрос возвращает несколько строк, применяем цикл
+      while($author = mysql_fetch_array($ath)){
+        //echo $author['login'] ;
+      }
     }
-
-  
-
-// Выполняем SQL-запрос
-
-
-
 ?>
 
 <html>
@@ -30,9 +31,9 @@
   <h1>Электронный дневник</h1>
   <!-- Комментарий -->
   <p>Добро пожаловать.</p>
-  <form action="action.php"  method="post" enctype="multipart/form-data">
-	Ваш логин  : <input type="text" name=$value /><br />
-	Ваш пароль: <input type="text" name="password" /><br />
+  <form action="studPage.php"  method="post" enctype="multipart/form-data">
+	Ваш логин  : <input type="text" name="login" /><br />
+	Ваш пароль: <input type="password" name="password" /><br />
 	<input type="submit" value="Отправить форму" />
    </form>
  </body>
